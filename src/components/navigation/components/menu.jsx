@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import {
@@ -11,6 +11,8 @@ import {
 
 const Menu = styled['div']`
     width: 100%;
+
+    padding-right: 40px;
 
     display: flex;
     flex-direction: column;
@@ -25,18 +27,24 @@ const MenuListsWrapper = styled['a']`
     grid-gap: 16px;
     align-items: center;
 
-    text-align: left;
-
     padding: 16px 24px;
 
     cursor: pointer;
 
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+
     font-size: ${props => props['theme']['fontSize']['14']};
     font-family: ${props => props['theme']['fontFamily']};
 
-    color: ${props => props['isActive']};
+    color: ${props => props['isActiveColor']};
 
-    // background-color: blue;
+    ${props =>
+        props['isActive'] &&
+        css`
+            background-color: ${props =>
+                props['theme']['color']['navigationHover']};
+        `}
 `
 
 const menu = () => {
@@ -47,7 +55,7 @@ const menu = () => {
         height: '20px',
     }
 
-    const isActive = route => {
+    const isActiveColor = route => {
         return Router.route === route ? '#FFFFFF' : '#808191'
     }
 
@@ -57,7 +65,7 @@ const menu = () => {
                 <StyledHome
                     width={IconsProps.width}
                     height={IconsProps.height}
-                    color={isActive('/')}
+                    color={isActiveColor('/')}
                 />
             ),
             path: '/',
@@ -68,7 +76,7 @@ const menu = () => {
                 <StyledCalendar
                     width={IconsProps.width}
                     height={IconsProps.height}
-                    color={isActive('/calendar')}
+                    color={isActiveColor('/calendar')}
                 />
             ),
             path: '/calendar',
@@ -79,7 +87,7 @@ const menu = () => {
                 <StyledBook
                     width={IconsProps.width}
                     height={IconsProps.height}
-                    color={isActive('/mycourse')}
+                    color={isActiveColor('/mycourse')}
                 />
             ),
             path: '/mycourse',
@@ -90,7 +98,7 @@ const menu = () => {
                 <StyledList
                     width={IconsProps.width}
                     height={IconsProps.height}
-                    color={isActive('/courselist')}
+                    color={isActiveColor('/courselist')}
                 />
             ),
             path: '/courselist',
@@ -103,7 +111,8 @@ const menu = () => {
             {MenuLists.map((item, index) => {
                 return (
                     <MenuListsWrapper
-                        isActive={isActive(item.path)}
+                        isActive={Router.route === item.path}
+                        isActiveColor={isActiveColor(item.path)}
                         key={index}
                     >
                         {item.icon}
