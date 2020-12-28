@@ -1,6 +1,7 @@
 const LightTheme = {
     color: {
         navigation: '#FDFDFD',
+        navigationHover: '#2F3CED',
         body: '#FDFDFD',
         card: '#FFFFFF',
         text: '#121212',
