@@ -14,14 +14,14 @@ const pageWrapper = ({ title, children }) => {
     return (
         <PageWrapper>
             <Head>
-                <title>{title}</title>
+                <title>{title} | UNIKOM Learning Management System</title>
             </Head>
             {children}
         </PageWrapper>
     )
 }
 
-pageWrapper.PropTypes = {
+pageWrapper.propTypes = {
     title: PropTypes.string,
 }
 

@@ -1,10 +1,11 @@
 import React from 'react'
+import PageWrapper from '../components/layout/pageWrapper'
 
 const index = () => {
     return (
-        <div>
-            <p>Hello World</p>
-        </div>
+        <PageWrapper title='Home'>
+            <div></div>
+        </PageWrapper>
     )
 }
 
