@@ -25,7 +25,6 @@ const MenuListsWrapper = styled['a']`
     grid-auto-columns: column;
     grid-template-columns: max-content max-content;
     grid-gap: 16px;
-    align-items: center;
 
     padding: 16px 24px;
 
@@ -36,6 +35,8 @@ const MenuListsWrapper = styled['a']`
 
     font-size: ${props => props['theme']['fontSize']['14']};
     font-family: ${props => props['theme']['fontFamily']};
+
+    text-decoration: none;
 
     color: ${props => props['isActiveColor']};
 
@@ -110,14 +111,16 @@ const menu = () => {
         <Menu>
             {MenuLists.map((item, index) => {
                 return (
-                    <MenuListsWrapper
-                        isActive={Router.route === item.path}
-                        isActiveColor={isActiveColor(item.path)}
-                        key={index}
-                    >
-                        {item.icon}
-                        {item.name}
-                    </MenuListsWrapper>
+                    <Link href={item.path} passHref>
+                        <MenuListsWrapper
+                            isActive={Router.route === item.path}
+                            isActiveColor={isActiveColor(item.path)}
+                            key={index}
+                        >
+                            {item.icon}
+                            {item.name}
+                        </MenuListsWrapper>
+                    </Link>
                 )
             })}
         </Menu>
