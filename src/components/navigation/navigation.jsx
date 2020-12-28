@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Logo from './components/logo'
+
 const Navigation = styled['nav']`
     width: 100%;
     max-width: 260px;
@@ -14,7 +16,7 @@ const Navigation = styled['nav']`
 const navigation = () => {
     return (
         <Navigation>
-            <div></div>
+            <Logo />
         </Navigation>
     )
 }
