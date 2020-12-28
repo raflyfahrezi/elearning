@@ -1,4 +1,4 @@
-import { Home, Dashboard, Book, List } from '@styled-icons/material-rounded'
+import { Home, CalendarToday, Book, List } from '@styled-icons/material-rounded'
 import styled, { css } from 'styled-components'
 
 const StyledHome = styled(Home)`
@@ -12,7 +12,7 @@ const StyledHome = styled(Home)`
         `}
 `
 
-const StyledDashboard = styled(Dashboard)`
+const StyledCalendar = styled(CalendarToday)`
     width: ${props => (props['width'] ? props['width'] : 'auto')};
     height: ${props => (props['height'] ? props['height'] : 'auto')};
 
@@ -43,4 +43,4 @@ const StyledList = styled(List)`
         `}
 `
 
-export { StyledHome, StyledDashboard, StyledList, StyledBook }
+export { StyledHome, StyledCalendar, StyledList, StyledBook }
