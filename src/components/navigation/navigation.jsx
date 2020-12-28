@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Logo from './components/logo'
+import Menu from './components/menu'
 
 const Navigation = styled['nav']`
     width: 100%;
@@ -17,6 +18,7 @@ const navigation = () => {
     return (
         <Navigation>
             <Logo />
+            <Menu />
         </Navigation>
     )
 }
