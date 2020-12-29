@@ -3,9 +3,6 @@ import styled from 'styled-components'
 
 const SideContent = styled['div']`
     width: 100%;
-    max-width: 450px;
-
-    justify-self: end;
 
     background-color: green;
 `
