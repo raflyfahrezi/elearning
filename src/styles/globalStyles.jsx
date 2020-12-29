@@ -6,6 +6,10 @@ const globalStyles = createGlobalStyle`
         margin : 0;
         box-sizing : border-box;
     }
+
+    body {
+        background-color: ${props => props['themee']['color']['body']};
+    }
 `
 
 export default globalStyles
