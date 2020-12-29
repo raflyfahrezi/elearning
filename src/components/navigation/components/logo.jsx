@@ -6,7 +6,7 @@ import LogoUNIKOM from '../assets/logo_unikom.png'
 const Logo = styled['div']`
     width: 100%;
 
-    padding: 20px;
+    padding: 20px 20px 55px 20px;
 
     text-align: center;
 `
