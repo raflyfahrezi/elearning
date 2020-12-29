@@ -1,0 +1,22 @@
+[
+    {
+        "nama": "Rekayasa Perangkat Lunak",
+        "dosen": "Dian Dharmayanti",
+        "img": "rpl.jpg"
+    },
+    {
+        "nama": "Aplikasi Teknologi Online",
+        "dosen": "Eko Budi Setiawan",
+        "img": "atol.png"
+    },
+    {
+        "nama": "Basis Data 2",
+        "dosen": "Fakhrian Fadlia A",
+        "img": "basdat2.png"
+    },
+    {
+        "nama": "Teori Bahasa dan Automata",
+        "dosen": "Maya Hermawati",
+        "img": "tba.jpg"
+    }
+]
