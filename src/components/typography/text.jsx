@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Text = styled['div']`
+const Text = styled['p']`
     font-family: ${props => props['theme']['fontFamily']};
     font-size: ${props => props['theme']['fontSize']['16']};
 
