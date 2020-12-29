@@ -12,6 +12,15 @@ const PageWrapper = styled['div']`
     position: fixed;
 `
 
+const Container = styled['div']`
+    width: 100%;
+    height: 100%;
+
+    padding: 30px;
+
+    background-color: blue;
+`
+
 const pageWrapper = ({ title, children }) => {
     return (
         <PageWrapper>
@@ -19,7 +28,7 @@ const pageWrapper = ({ title, children }) => {
                 <title>{title} | UNIKOM Learning Management System</title>
             </Head>
             <Navigation />
-            {children}
+            <Container>{children}</Container>
         </PageWrapper>
     )
 }
