@@ -5,6 +5,8 @@ import Title from '../typography/title'
 
 const TitleWrapper = styled['div']`
     width: 100%;
+
+    margin-bottom: 30px;
 `
 
 const title = ({ title }) => {
