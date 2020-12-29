@@ -10,6 +10,8 @@ const Navigation = styled['nav']`
     max-width: 260px;
     height: 100%;
 
+    position: relative;
+
     border-right: 1px solid #e4e4e4;
 
     background-color: ${props => props['theme']['color']['navigation']};
