@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Carousel from './components/carousel'
+
 const MainContent = styled['div']`
     width: 100%;
 
@@ -10,7 +12,7 @@ const MainContent = styled['div']`
 const mainContent = () => {
     return (
         <MainContent>
-            <div>This is main content</div>
+            <Carousel />
         </MainContent>
     )
 }

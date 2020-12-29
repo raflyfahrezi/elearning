@@ -23,8 +23,8 @@ const home = () => {
         <Home>
             <Title title='Hi Farhan Rafly Fahrezi S' />
             <HomeContent>
-                <MainContent></MainContent>
-                <SideContent></SideContent>
+                <MainContent />
+                <SideContent />
             </HomeContent>
         </Home>
     )
