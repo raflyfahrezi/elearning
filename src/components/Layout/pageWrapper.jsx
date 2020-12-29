@@ -9,6 +9,9 @@ const PageWrapper = styled['div']`
     width: 100%;
     height: 100%;
 
+    display: flex;
+    flex-direction: row;
+
     position: fixed;
 `
 
@@ -17,8 +20,6 @@ const Container = styled['div']`
     height: 100%;
 
     padding: 30px;
-
-    background-color: blue;
 `
 
 const pageWrapper = ({ title, children }) => {
