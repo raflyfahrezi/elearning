@@ -7,6 +7,8 @@ const Text = styled['p']`
     font-family: ${props => props['theme']['fontFamily']};
     font-size: ${props => props['theme']['fontSize']['14']};
 
+    line-height: ${props => props['theme']['lineHeight']['14']};
+
     color: ${props => props['theme']['color']['text']};
 `
 

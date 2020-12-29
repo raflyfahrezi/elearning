@@ -9,7 +9,7 @@ const Fonts = {
         32: '32px',
         48: '48px',
     },
-    lineSpacing: {
+    lineHeight: {
         12: '19.416px',
         14: '22.652px',
         16: '25.888px',
