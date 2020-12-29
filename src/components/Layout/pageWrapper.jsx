@@ -29,7 +29,7 @@ pageWrapper.propTypes = {
 }
 
 pageWrapper.defaultProps = {
-    title: 'Elearn.',
+    title: 'Home',
 }
 
 export default pageWrapper

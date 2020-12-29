@@ -8,7 +8,7 @@ const globalStyles = createGlobalStyle`
     }
 
     body {
-        background-color: ${props => props['themee']['color']['body']};
+        background-color: ${props => props['theme']['color']['body']};
     }
 `
 
