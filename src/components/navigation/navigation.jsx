@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import Logo from './components/logo'
 import Menu from './components/menu'
+import User from './components/user'
 
 const Navigation = styled['nav']`
     width: 100%;
@@ -19,6 +20,7 @@ const navigation = () => {
         <Navigation>
             <Logo />
             <Menu />
+            <User />
         </Navigation>
     )
 }
