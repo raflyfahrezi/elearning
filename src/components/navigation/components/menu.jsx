@@ -111,11 +111,10 @@ const menu = () => {
         <Menu>
             {MenuLists.map((item, index) => {
                 return (
-                    <Link href={item.path} passHref>
+                    <Link href={item.path} passHref key={index}>
                         <MenuListsWrapper
                             isActive={Router.route === item.path}
                             isActiveColor={isActiveColor(item.path)}
-                            key={index}
                         >
                             {item.icon}
                             {item.name}
