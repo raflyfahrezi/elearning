@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Header from '../../../../typography/header'
-import Text from '../../../../typography/text'
+import { Header, Text } from '../../../../typography/index'
 
 import MataKuliahLists from '../../../../../content/mataKuliah.json'
 
