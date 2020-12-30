@@ -2,21 +2,29 @@
     {
         "nama": "Rekayasa Perangkat Lunak",
         "dosen": "Dian Dharmayanti",
-        "img": "rpl.jpg"
+        "img": "rpl.jpg",
+        "student": "30",
+        "progress": "20 of 30 modules are done"
     },
     {
         "nama": "Aplikasi Teknologi Online",
         "dosen": "Eko Budi Setiawan",
-        "img": "atol.png"
+        "img": "atol.png",
+        "student": "28",
+        "progress": "18 of 29 modules are done"
     },
     {
         "nama": "Basis Data 2",
         "dosen": "Fakhrian Fadlia A",
-        "img": "basdat2.png"
+        "img": "basdat2.png",
+        "student": "43",
+        "progress": "24 of 25 modules are done"
     },
     {
         "nama": "Teori Bahasa dan Automata",
         "dosen": "Maya Hermawati",
-        "img": "tba.jpg"
+        "img": "tba.jpg",
+        "student": "31",
+        "progress": "5 of 41 modules are done"
     }
 ]
