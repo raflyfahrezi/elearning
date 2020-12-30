@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Text = styled['p']`
     font-family: ${props => props['theme']['fontFamily']};
     font-size: ${props => props['theme']['fontSize']['16']};
+    line-height: ${props => props['theme']['lineHeight']['16']}
 
     color: ${props => props['theme']['color']['text']};
 `

@@ -6,6 +6,8 @@ const Header = styled['p']`
     font-size: ${props => props['theme']['fontSize']['20']};
     font-weight: bold;
 
+    line-height: ${props => props['theme']['lineHeight']['20']}
+
     color: ${props => props['theme']['color']['text']};
 `
 
