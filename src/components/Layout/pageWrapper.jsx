@@ -20,6 +20,8 @@ const Container = styled['div']`
     height: 100%;
 
     padding: 30px;
+
+    overflow-y: auto;
 `
 
 const pageWrapper = ({ title, children }) => {

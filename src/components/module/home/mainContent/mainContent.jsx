@@ -5,8 +5,6 @@ import Carousel from './components/carousel'
 
 const MainContent = styled['div']`
     width: 100%;
-
-    background-color: blue;
 `
 
 const mainContent = () => {
