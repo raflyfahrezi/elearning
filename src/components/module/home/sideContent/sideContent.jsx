@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import CourseInProgress from './components/courseInProgress'
+
 const SideContent = styled['div']`
     width: 100%;
-
-    background-color: green;
 `
 
 const sideContent = () => {
     return (
         <SideContent>
-            <div>this is side content</div>
+            <CourseInProgress />
         </SideContent>
     )
 }
