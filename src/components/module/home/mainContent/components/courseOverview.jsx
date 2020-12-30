@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Header, Text } from '../../../../typography/index'
+import { Header, Text, SubText } from '../../../../typography/index'
 
 import MataKuliahLists from '../../../../../content/mataKuliah.json'
 
@@ -36,6 +36,7 @@ const courseOverview = () => {
                             <Text>
                                 <b>{item.nama}</b>
                             </Text>
+                            <SubText>{item.progress}</SubText>
                         </CourseOverviewCard>
                     )
                 })}
